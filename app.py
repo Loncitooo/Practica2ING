@@ -17,6 +17,10 @@ def encrypt(text, shift):
 def decrypt(encrypted_text, shift):
     return encrypt(encrypted_text, -shift)
 
+# Esta poderosa funcion imprime el poderosisimo Oullea
+def oullea():
+    print("Oullea")
+
 if __name__ == "__main__":
     text = input("Ingresa el texto a encriptar: ")
     shift = int(input("Ingresa el valor de desplazamiento: "))
