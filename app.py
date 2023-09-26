@@ -1,0 +1,29 @@
+
+#Daniel Octavio Juarez Torres
+def encrypt(text, shift):
+    encrypted_text = ""
+    for char in text:
+        if char.isalpha():
+            is_upper = char.isupper()
+            char = char.lower()
+            encrypted_char = chr(((ord(char) - ord('a') + shift) % 26) + ord('a'))
+            if is_upper:
+                encrypted_char = encrypted_char.upper()
+            encrypted_text += encrypted_char
+        else:
+            encrypted_text += char
+    return encrypted_text
+
+def decrypt(encrypted_text, shift):
+    return encrypt(encrypted_text, -shift)
+
+if __name__ == "__main__":
+    text = input("Ingresa el texto a encriptar: ")
+    shift = int(input("Ingresa el valor de desplazamiento: "))
+
+    encrypted_text = encrypt(text, shift)
+    decrypted_text = decrypt(encrypted_text, shift)
+    
+#Imprime el texto de manera encriptada y desencriptada
+    print(f"Texto encriptado: {encrypted_text}")
+    print(f"Texto desencriptado: {decrypted_text}")
