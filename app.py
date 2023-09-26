@@ -19,11 +19,11 @@ def decrypt(encrypted_text, shift):
 
 if __name__ == "__main__":
     text = input("Ingresa el texto a encriptar: ")
-    #mejoramos los desplazamientos a negativos para mejorar la gestión de caracteres no alfabeticos
-    shift = int(input("Ingresa el valor de desplazamiento (positivo o negativo): "))
+    shift = int(input("Ingresa el valor de desplazamiento: "))
 
     encrypted_text = encrypt(text, shift)
     decrypted_text = decrypt(encrypted_text, shift)
 
     print(f"Texto encriptado: {encrypted_text}")
     print(f"Texto desencriptado: {decrypted_text}")
+
