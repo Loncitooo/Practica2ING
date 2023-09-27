@@ -19,6 +19,7 @@ def decrypt(encrypted_text, shift):
 
 # Esta poderosa funcion imprime el poderosisimo Oullea
 def oullea():
+    print("Oullea pal loncitoo")
     print("Oullea")
 
 if __name__ == "__main__":
