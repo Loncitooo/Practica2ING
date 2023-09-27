@@ -19,6 +19,8 @@ def decrypt(encrypted_text, shift):
 
 # Esta poderosa funcion imprime el poderosisimo Oullea
 def oullea():
+    for i in range(0, 100):
+        print("Oullea")
     print("Oullea pal loncitoo")
     print("Oullea")
 
