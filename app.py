@@ -19,12 +19,9 @@ def decrypt(encrypted_text, shift):
 
 # Esta poderosa funcion imprime el poderosisimo Oullea
 def oullea():
- Practica2Pro
     print('PruebaPalYisus')
-=======
     for i in range(0, 100):
         print("Oullea2")
-    Master
     print("Oullea pal loncitoo")
     print("Oullea")
 
