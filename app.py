@@ -17,7 +17,7 @@ def encrypt(text, shift):
 def decrypt(encrypted_text, shift):
     return encrypt(encrypted_text, -shift)
 
-# Esta poderosa funcion imprime el poderosisimo Oulleasss
+# Esta poderosa funcion imprime el poderosisimo Oulleas
 def oullea():
     print('PruebaPalYisus')
     for i in range(0, 100):
